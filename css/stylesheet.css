@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Fuente_titulo';
+    src: url('./Ungai.otf');
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+  *{
+    padding:00;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{text-decoration: none !important;}
+
+[class*= "col-"]{
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+html,body{
+    max-width: 100%;
+    overflow-x:hidden;
+}
+
+.container-fluid{
+    position:relative;
+    padding:0px !important;
+    margin:0px !important;
+}
+
+.fila{
+    position:relative;
+    margin:auto;
+    width: 100%;
+    height: auto;
+    clear:both;
+    display:table;
+}
+
+body{overflow-x:hidden;}
+a:hover{text-decoration: none;} a{text-decoration: none;}
+
+
+/*Empieza aqui*/
+
+
+
+.titulo-japon{
+    font-family: 'Fuente_titulo';    
+    font-weight: 800;
+    font-size: 100px;
+    color:#413c3c;
+}
+
+.titulo-japon-2{
+    font-family: 'Fuente_titulo';    
+    font-weight: 800;
+    font-size: 60px;
+    color:#413c3c;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.titulotexto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 320;
+    font-size: 15px;
+    color:#413c3c;
+}
+
+strong{ 
+    /*font-weight: bold ;*/
+    color:#f54545;
+}
+
+.titulotexto-sub{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    color:#413c3c;
+}
+
+.titulotexto-sub-2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    color:#413c3c;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*NAVBAR*/
+
+.nav{
+    position: fixed;
+    top:0;
+    height: 40px;
+    width: 100vw;
+    background-color: white;
+    filter: opacity(96%);
+    justify-content: center !important;
+    z-index:99;
+}
+.nav li{
+    align-items: center;
+    margin-left:60px !important;
+    font-weight: 400;
+    text-decoration: none !important;
+    line-height: 40px;
+}
+
+.nav li a{
+    text-decoration: none !important;
+    color:#413c3c;
+}
+
+.nav li a:hover{
+    text-decoration: none !important;
+    color:#f54545;
+}
+
+#o{
+    margin-top: 13px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:#f54545;
+}
+
+/*DISTANCIAS*/
+
+#kaizen{
+    margin-top:55px;
+}
+
+.bloque-titulaciones{
+    margin-top:30px;
+}
+
+#Gaman{
+    margin-top:50px;
+}
+
+#separacion-imagen{
+    margin-top: 20%;
+}
+
+
+/*scroll titulaciones y bloques grises*/
+
+.scroll-titulos{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    width: 90%;
+    margin:0 auto;
+    border: 0.1px solid #68686928;
+    border-radius: 1.2%;
+}
+
+.scroll-titulos::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor:default;
+}
+.scroll-titulos::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor:default;
+    width: 10px;
+}
+.scroll-titulos::-webkit-scrollbar-thumb{
+    border-radius: 480px;
+    background-color: #686869;
+    cursor:default;
+}
+.scroll-titulos::-webkit-scrollbar-thumb:hover{
+    background-color: #f54545;
+}
+.scroll-titulos::-webkit-scrollbar-thumb:active{
+    background-color: #f54545;
+}
+
+
+
+
+.texto-enlace{
+    text-decoration: none !important;
+    color:#413c3c;
+    padding: 0px 0.01vw 0.01vw 0.01vw !important;
+}
+
+.texto-enlace:hover{
+    text-decoration: none !important;
+    color:#f54545;
+}
+
+.li-titulo{
+    position:sticky;
+    top:0;
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.bloque-titulaciones-2{
+    margin-top:5px !important;
+    margin-bottom: 50px !important;
+    height: 30px;
+    width: 90%;
+    margin:0 auto;
+    border: 0.1px solid #68686928;
+    border-radius: 2%;
+    padding-left: 33px ;
+}
+
+.textodiplomaturas-2{
+    margin-right: 10px;;
+}
+
+.bloque-individual{
+    margin: 5px 10px 50px 10px !important;
+    height: 90%;
+    /*border: 0.1px solid #68686928;*/
+    border-radius: 2%;
+    padding: 0 2% 0 2% ;
+}
+
+.bloque-individual-2{
+    margin: 5px 10px 15px 10px !important;
+    height: 100%;
+    border: 0.1px solid #68686928;
+    border-radius: 1%;
+    padding: 0 5% 20px 5% ;
+}
+
+.master{
+    line-height: 28px !important;
+}
+
+
+/*scroll*/
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: white;
+    cursor:default;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px white;
+    border-radius: 0px;
+    background-color: white;
+    cursor:default;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 480px;
+    background-color: #686869;
+    cursor:default;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #f54545;
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: #f54545;
+}
+
+
+
+/*loader*/
+
+.seccion-loader{
+    margin-top:25%;
+}
+
+.seccion-loader-2{
+    margin-top:5%;
+    margin-bottom: 10%;
+}
+
+.loading{
+    margin-top:10px;
+    text-align: center;
+}
+
+.loaderimg{
+    
+    width: 50px;
+    animation: rotation 2s infinite linear;
+    display:block;
+    margin:auto;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+/*imagenes*/
+
+.imagenkaizen{
+    width: 80%;;
+    display:block;
+    margin:auto;
+}
+
+.imagenkotodama{
+    width: 50%;;
+    display:block;
+    margin:auto;
+}
+
+.gamanimg{
+    width: 80%;;
+    display:block;
+    margin:auto;
+}
+
+.komakaiimg{
+    height: 8vw;
+    display:block;
+    margin:auto;
+    padding-left: 0px !important;
+}
+
+.ganharuimg{    
+    height: 40px;
+    display:block;
+    margin:auto;
+    padding-left: 0px !important;
+}
+
+
+.styled__Container-sc-z37tf1-0 .tBKau .tally-powered{
+    display:none !important;
+}

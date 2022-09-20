@@ -1,0 +1,399 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Japondesigner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      
+      <ul class="nav col-12">
+        <li><a class="titulotexto">J</a></li>
+        <li><a  class="titulotexto">A</a></li>
+        <li><a class="titulotexto">P</a></li>
+        <li><a href="#Kotodama"><div id="o"></div> </a></li>
+        <li><a class="titulotexto">N</a></li>
+        <li><a class="titulotexto">D</a></li>
+        <li><a class="titulotexto">E</a></li>
+        <li><a class="titulotexto">S</a></li>
+        <li><a class="titulotexto">I</a></li>
+        <li><a class="titulotexto">G</a></li>
+        <li><a class="titulotexto">N</a></li>
+        <li><a class="titulotexto">E</a></li>
+        <li><a class="titulotexto">R</a></li>
+      </ul>
+
+  </div>
+    <div class="container">
+
+
+
+
+<!--1º Bloque-->
+
+  <div class="col-12" id="kaizen">
+    <br>
+    <br>
+  <div class="col-6">
+  <p class="titulotexto" id="separacion-imagen">Empezaré por decir que me considero un diseñador de experiencias...</p>
+  <h1 class="titulo-japon"> KAIZEN</h1>
+  <p class="titulotexto-sub">❝La mejora que se persigue en todo momento.❞</p>
+
+  <p class="titulotexto">Todos hemos visto alguna vez una película japonesa de maestro y aprendiz, en la que uno de los aprendices termina dedicando todo su tiempo y esfuerzo para entender un concepto con el que salva Japón de unos ninjas. En el diseño ocurre lo mismo, todos tenemos un ordenador en nuestra casa pero eso no nos convierte en diseñadores.</p>
+  <p class="titulotexto">El diseño es como el aprendiz, <strong>por cada enseñanza</strong> hay que dedicar todo tu tiempo, afecto, conocimiento y sensibilidad para profesionalizar el gusto hasta convertirse en un diseñador maestro.</p>
+</div>
+
+<div class="col-6" >
+  <img src="./media/COLOR.png" alt="" class="imagenkaizen">
+</div>
+
+
+    <div >
+
+ 
+    </div>
+  </div>
+
+<br>
+
+
+
+<!--2º Bloque-->
+<!--subimos la imagen a airtable, le damos a share para hacerlo publico, desde el enlace publico de la tabla de airtable abrimos la imagen, pulsamos en el enlace de arriba para descargar la imagen y nos abrira una nueva pestaña, copiamos este enlace y lo pegamos en el editor de airtable en href y volvemos hacerlo publico.-->
+
+<div class="col-12" id="Gaman">
+  <br>
+  <br>
+  <h2 class="titulo-japon-2">Gaman</h2>
+  <p class="titulotexto-sub-2">❝La perseverancia de continuar a pesar de la adversidad.❞</p>
+  <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2019 hasta el día de hoy, alguna de hasta 2.000 horas de duración, siempre intentando elegir las plataformas/profesores mas profesionales con los retos mas complejos.</p>
+
+
+   
+    <div class="bloque-titulaciones">
+      <div class="col-6">
+          <img src="./media/gaman.png" alt="" class="gamanimg">
+      </div>
+
+      <div class="col-6" >
+          
+          <section v-if="errored">
+            <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente más tarde...</p>
+          </section>
+
+
+          <section v-else>
+            
+            <div class="scroll-titulos">
+              <ul>
+                <li class="li-titulo titulotexto" v-if="!loading"> Diplomaturas</li>
+                <div v-if="loading" class="seccion-loader">
+                  <img src="./media/loader.png" alt="" class="loaderimg">
+                  <div class="loading titulotexto">Cargando...</div>
+                </div>
+
+
+              <div v-for="item of info">
+                <div v-for="itemo of item.records">
+                  <div v-for="itemi of 1">
+                    <li>
+                      <a class="texto-enlace titulotexto" v-if="itemo.fields.href" :href="itemo.fields.href" download="itemo.fields.href">{{itemo.fields.Status}}</a>
+                      <a class="texto-enlace titulotexto" v-if="!itemo.fields.href & itemo.fields.Status" :href="!itemo.fields.URL" target="_blank">{{itemo.fields.Status}}</a>
+                    </li> 
+                  </div>
+                </div>
+              </div>
+
+              </ul>
+            </div>
+
+          </section>
+
+          <div class="bloque-titulaciones-2">
+            <a class="texto-enlace titulotexto master" href="https://cei.es/cei-curso/master-de-diseno-grafico/" download="itemo.fields.href" target="blanck">Master en Diseño gráfico en la Cei.</a>
+          </div>
+
+        </div>  
+      </div>
+      
+
+
+</div>
+
+
+
+
+
+
+<!--3º Bloque-->
+<div class="col-12" id="Komakai">
+  <br>
+  <br>
+    <h2 class="titulo-japon-2">Komakai</h2>
+    <p class="titulotexto-sub-2">❝La atención al detalle de lo apenas imperceptible.❞</p>
+    <p class="titulotexto">
+      Tras haber aprendido la lección de la disciplina, si se quiere ser el mejor hay que hacerlo de forma <strong>diligente</strong> y esto significa enfocarse estrategicamente en como y qué se quiere hacer para destacar entre el resto. Estos son los servicios en los que soy experto y me entrego con fanatismo y pasion para conseguir el trabajo mas profesional y diferenciador.   
+    
+    </p>
+
+
+    <div class="col-12">
+
+      <div class="col-4 ">
+        <div class="bloque-individual">
+          <img src="./media/komakai1.png" alt="" class="komakaiimg">
+          <br>
+          <p class="titulotexto-sub-2">Diseño Web y App´s</p>
+          <p class="titulotexto">
+            Soy especialista en web y aplicaciones nativas, ya sea por Low Code o a medida, desde webs corporativas, web dinámicas o e-commerce. <strong>Soy un aprendiz incansable</strong> de Webflow, Make, Zapier, Flutter, Bubble,  Airtable, Wized, Wordpress, Prestashop, PHP, Javascript, Typescript, MYSQL, Mariadb, Mongodb, Laravel, Vue.js, React.js, Swift, HTML, CSS, Bootstrap, Express.js, Composer, npm, git, JQuery, Node y otras muchas alternativas aplicadas a las necesidades de cada cliente.  
+
+          </p>
+          <p class="titulotexto">
+            Si quieres hacer una web o una aplicación con lógica ademas de un buen diseño, no dudes en ponerte en <a href="#Kotodama"><strong>contacto conmigo</strong></a>, ¡Te sorprenderas!.  
+
+          </p>
+        </div>
+      </div>
+
+      <div class="col-4 ">
+        <div class="bloque-individual">
+          <img src="./media/komakai2.png" alt="" class="komakaiimg">
+          <br>
+          <p class="titulotexto-sub-2">Diseño Gráfico y SEO</p>
+          <p class="titulotexto">
+            En el diseño gráfico lo primero es crear un Briefing ajustando el servicio a las necesidades del cliente, el diseño gráfico es el trabajo que yo considero más notorio y que más me gusta hacer, <strong>el arte de un buen trabajo es el exito para dar la vienbenida a tu empresa</strong>, es por esto que ofrezco un servicio de calidad dirigiendo al cliente a las necesidades de los materiales gráficos; brandbook, branding, rebranding, concepto y diseño, papeléria, arte publicitario, multimedia, packaging, diseño de producto... 
+
+          </p>
+
+          <p class="titulotexto">
+            Como profesional en técnologias <strong>comprendo la necesidad de la presencia digital</strong>, es por eso que ofrezco los servicios de SEO organico, OnPage, OffPage, de Competencia y Backlinks. 
+
+          </p>
+        </div>
+      </div>
+
+      <div class="col-4 ">
+        <div class="bloque-individual">
+          <img src="./media/komakai3.png" alt="" class="komakaiimg">
+          <br>
+          <p class="titulotexto-sub-2">Paneles de arte flotante</p>
+          <p class="titulotexto">
+            El arte flotante o más conocido como <strong>Ukiyo-e</strong> es un género de arte japonés surgido en la ciudad de Edo que floreció entre formas y metodos de linealidades y colores monocromáticos, aunque el verdadero arte flotante se hacia en madera acabo convirtiendose en papel, no es facil encontrar a un dibujante de arte flotante pero siempre viene bien personalizar un servicio en el arte japones, ya sea porque tienes un restaurante de ramen, te quieres hacer un tatuaje simbolico o simplemente quieras tener un cuadro del periodo Tokugawa y darle a tu negocio un toque poético/artístico.
+
+          </p>
+
+          <p class="titulotexto">
+            No dudes en <a href="#Kotodama"><strong>contactar conmigo</strong></a>, y ¡llena tu vida de disciplina samurai!.  
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    
+
+<!--4º Bloque-->
+
+
+<div class="col-12" id="Ganharu">
+  <br>
+  <br>
+    <h2 class="titulo-japon-2">Ganharu</h2>
+    <p class="titulotexto-sub-2">❝Dar todo lo que llevas dentro.❞</p>
+    <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2020 hasta el día de hoy, alguna de hasta 2.000 horas de duración.</p>
+
+
+
+  
+  <div class="col-12">
+
+      <section v-if="errored">
+        <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente más tarde...</p>
+      </section>
+
+
+      <section v-else>
+
+        <div v-if="loading" class="seccion-loader-2">
+          <img src="./media/loader.png" alt="" class="loaderimg">
+          <div class="loading titulotexto">Cargando...</div>
+        </div>
+
+
+
+        <!--Bloques de valores-->
+          <div v-for="item of info">
+            <div v-for="itemo of item.records">
+              <div v-for="itemi of 1">
+
+                  <div class="col-6 ">
+                    <a :href="itemo.fields.URL" target="_blank">
+                      <div class="bloque-individual-2">
+                          <br>
+                          <p class="titulotexto-sub-2" >
+                            <img src="./media/ganharu2.png" alt="" class="ganharuimg">
+
+                            {{itemo.fields.titulo}}
+                            <strong>
+                              {{itemo.fields.categorias[0]}} 
+                              <spam v-if="itemo.fields.categorias[1]">, {{itemo.fields.categorias[1]}}</spam>
+                              <spam v-if="itemo.fields.categorias[2]">, {{itemo.fields.categorias[2]}}</spam>
+                              <spam v-if="itemo.fields.categorias[3]">, {{itemo.fields.categorias[3]}}</spam>
+                              <spam v-if="itemo.fields.categorias[4]">, {{itemo.fields.categorias[4]}}</spam>
+                              <spam v-if="itemo.fields.categorias[5]">, {{itemo.fields.categorias[5]}}</spam> 
+                              <spam v-if="itemo.fields.categorias[6]">, {{itemo.fields.categorias[6]}}</spam>
+                              <spam v-if="itemo.fields.categorias[7]">, {{itemo.fields.categorias[7]}}</spam>
+                              <spam v-if="itemo.fields.categorias[8]">, {{itemo.fields.categorias[8]}}</spam>
+                              <spam v-if="itemo.fields.categorias[9]">, {{itemo.fields.categorias[9]}}</spam>
+                              <spam v-if="itemo.fields.categorias[10]">, {{itemo.fields.categorias[10]}}</spam> 
+                            </strong>
+                            
+                          </p>
+                          <p class="titulotexto">
+                            {{itemo.fields.texto}}
+                            
+                          </p>
+                      </div>
+                    </a>
+                  </div>
+               
+              </div>  
+          </div>
+        
+          
+  </div>
+
+
+
+  
+<!--5º Bloque-->
+
+
+<div class="col-12" id="Kotodama">
+  <br>
+  <br> 
+    <h2 class="titulo-japon-2">Kotodama</h2>
+    <p class="titulotexto-sub-2">❝El alma que reside en las palabras.❞</p>
+    <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2020 hasta el día de hoy, alguna de hasta 2.000 horas de duración.</p>
+
+
+
+    <div class="col-6"> 
+      <img src="./media/kotodama.png" alt="" class="imagenkotodama">
+    </div>
+
+    <div class="col-6"> 
+      <iframe data-tally-src="https://tally.so/embed/n9q6KG?alignLeft=1&hideTitle=1&transparentBackground=1" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Formulario 1"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if(d.querySelector('script[src="'+w+'"]'))v();else{var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      
+    </div>
+    
+
+  </div>
+
+
+
+  <!--6º Bloque-->
+
+
+<div class="col-12" id="Agatsu">
+  <br>
+  <br>
+    <h2 class="titulo-japon-2">Agatsu</h2>
+    <p class="titulotexto-sub-2">❝La victoria sobre uno mismo.❞</p>
+    <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2020 hasta el día de hoy, alguna de hasta 2.000 horas de duración.</p>
+
+
+
+  </div>
+
+
+  <div class="col-12">
+
+    <div class="col-4 ">
+      <div class="bloque-individual">
+        <img src="./media/agatsu1.png" alt="" class="komakaiimg">
+        <br>
+        <p class="titulotexto-sub-2">Disciplina</p>
+        <p class="titulotexto">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="col-4 ">
+      <div class="bloque-individual">
+        <img src="./media/agatsu2.png" alt="" class="komakaiimg">
+        <br>
+        <p class="titulotexto-sub-2">Lectura</p>
+        <p class="titulotexto">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="col-4 ">
+      <div class="bloque-individual">
+        <img src="./media/agatsu3.png" alt="" class="komakaiimg">
+        <br>
+        <p class="titulotexto-sub-2">Dibujos</p>
+        <p class="titulotexto">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!--FOOTER-->
+
+
+<p class="titulotexto">Esta web está hecha con <strong>愛</strong> por Isaac Navajas Pozo.</p>
+    
+
+<div >
+    <ul id="bloque2">
+      <p>{{ mensaje }}</p>
+      <li v-for="(item, index) in items">
+        {{ mensaje }} - {{ index }} - {{ item}}
+      </li>
+    </ul>
+  </div>
+
+  <h1>Hello, world!</h1>
+  <div id="app">
+      <h1>Hello, world!</h1>
+      <h1>{{ mensaje }}</h1>
+  </div>
+
+    <!--CDN de Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+
+    <!--CDN de Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!--Bloques javascript de Vue-->
+    <script src="js/bloque1.js"></script>
+    <script src="js/bloque2.js"></script>
+    <script src="js/Gaman.js"></script>
+    <script src="js/Ganharu.js"></script>
+
+    <!--Bloque form -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
+  </div>
+  </body>
+  </body>
+</html>
