@@ -92,7 +92,7 @@
             
             <div class="scroll-titulos">
               <ul>
-                <li class="li-titulo titulotexto" v-if="!loading"> Diplomaturas</li>
+                <li class="li-titulo titulotexto" v-if="!loading">Diplomaturas</li>
                 <div v-if="loading" class="seccion-loader">
                   <img src="./media/loader.png" alt="" class="loaderimg">
                   <div class="loading titulotexto">Cargando...</div>
@@ -145,6 +145,9 @@
 
     <div class="col-12">
 
+
+
+      <!--3º Bloque parte 1-->
       <div class="col-4 ">
         <div class="bloque-individual">
           <img src="./media/komakai1.png" alt="" class="komakaiimg">
@@ -158,9 +161,20 @@
             Si quieres hacer una web o una aplicación con lógica ademas de un buen diseño, no dudes en ponerte en <a href="#Kotodama"><strong>contacto conmigo</strong></a>, ¡Te sorprenderas!.  
 
           </p>
+
+          <div class="divbotonsocial">
+            <a href="https://github.com/code-japondesigner" class="botonsocial titulotexto" target="_blank">
+              ➳
+            </a>
+          </div>
+
+
         </div>
       </div>
 
+
+
+      <!--3º Bloque parte 2-->
       <div class="col-4 ">
         <div class="bloque-individual">
           <img src="./media/komakai2.png" alt="" class="komakaiimg">
@@ -175,9 +189,19 @@
             Como profesional en técnologias <strong>comprendo la necesidad de la presencia digital</strong>, es por eso que ofrezco los servicios de SEO organico, OnPage, OffPage, de Competencia y Backlinks. 
 
           </p>
+
+          <div class="divbotonsocial">
+            <a href="https://www.crehana.com/users/japondesigner/" class="botonsocial titulotexto" target="_blank">
+              ➳
+            </a>
+          </div>
+
+
         </div>
       </div>
 
+
+      <!--3º Bloque parte 3-->
       <div class="col-4 ">
         <div class="bloque-individual">
           <img src="./media/komakai3.png" alt="" class="komakaiimg">
@@ -192,6 +216,13 @@
             No dudes en <a href="#Kotodama"><strong>contactar conmigo</strong></a>, y ¡llena tu vida de disciplina samurai!.  
 
           </p>
+
+          <div class="divbotonsocial">
+            <a href="https://www.instagram.com/japondesigner/" class="botonsocial titulotexto" target="_blank">
+              ➳
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -210,10 +241,10 @@
     <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2020 hasta el día de hoy, alguna de hasta 2.000 horas de duración.</p>
 
 
-
+<div class="col-6"><img src="./media/kotodama.png" alt="" class="imagenkotodama"></div>
   
-  <div class="col-12">
-
+  <div class="col-6 scroll-titulos2">
+    <p class="li-titulo titulotexto" v-if="!loading">Trabajos</p>
       <section v-if="errored">
         <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente más tarde...</p>
       </section>
@@ -221,10 +252,11 @@
 
       <section v-else>
 
-        <div v-if="loading" class="seccion-loader-2">
+        <div v-if="loading" class="seccion-loader">
           <img src="./media/loader.png" alt="" class="loaderimg">
           <div class="loading titulotexto">Cargando...</div>
         </div>
+
 
 
 
@@ -233,12 +265,11 @@
             <div v-for="itemo of item.records">
               <div v-for="itemi of 1">
 
-                  <div class="col-6 ">
+                  <div class="col-12">
                     <a :href="itemo.fields.URL" target="_blank">
                       <div class="bloque-individual-2">
                           <br>
                           <p class="titulotexto-sub-2" >
-                            <img src="./media/ganharu2.png" alt="" class="ganharuimg">
 
                             {{itemo.fields.titulo}}
                             <strong>
@@ -267,9 +298,8 @@
               </div>  
           </div>
         
-          
+        </div>      
   </div>
-
 
 
   
@@ -286,14 +316,23 @@
 
 
     <div class="col-6"> 
-      <img src="./media/kotodama.png" alt="" class="imagenkotodama">
-    </div>
-
-    <div class="col-6"> 
       <iframe data-tally-src="https://tally.so/embed/n9q6KG?alignLeft=1&hideTitle=1&transparentBackground=1" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Formulario 1"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if(d.querySelector('script[src="'+w+'"]'))v();else{var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
       
     </div>
     
+
+    <div class="col-6"> 
+      <div class="avatar">
+        <h5 class="titulo-japon-2 jd">JD</h5>
+      </div>
+      <p class="datos">633..</p>
+      <p class="datos">japondesigner@gmail.com</p>
+      <p class="datos">633..</p>
+
+      
+    </div>
+
+
 
   </div>
 
@@ -307,7 +346,9 @@
   <br>
     <h2 class="titulo-japon-2">Agatsu</h2>
     <p class="titulotexto-sub-2">❝La victoria sobre uno mismo.❞</p>
-    <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2020 hasta el día de hoy, alguna de hasta 2.000 horas de duración.</p>
+    <p class="titulotexto">
+      Solo cuando se da el 100 x 100 cada día es cuando es necesario hacer pequeños descansos para alejarte de tus metas y verlas desde otra perspectiva, es por eso que para mi es muy importante desconectarme tecnologicamente, lo que llamo el 3º tiempo. 
+      Para que se entienda aún más el concepto de esta web y me conozcas mejor, voy a compartir contigo unas de las actividades que más me gusta hacer.
 
 
 
@@ -334,8 +375,8 @@
         <br>
         <p class="titulotexto-sub-2">Lectura</p>
         <p class="titulotexto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          
+          Aunque he sido un devorador de libros, actualmente me gusta leer una novela de samurais del Japón feudal o un libro tradicional de fiosofia oriental lentamente, de esta forma me da tiempo a absorber el conocimiento mientras soy consciente en mi día a día de su vocabulario. 
+
         </p>
       </div>
     </div>
@@ -346,8 +387,7 @@
         <br>
         <p class="titulotexto-sub-2">Dibujos</p>
         <p class="titulotexto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          
+          Dibujar es lo que mas me relaja y donde inconscientemente mas me construllo artisticamente, dibujando Ukiyo-e se aprende de conceptualización, linealialidad, separación, minimalismo, paletas entre tonalidades de un mismo color y cuando diferenciarlo con otro distinto,
         </p>
       </div>
     </div>

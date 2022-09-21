@@ -152,6 +152,11 @@ strong{
     margin-top: 20%;
 }
 
+.jd{
+    line-height: 6.5vw;
+    color:white !important;
+}
+
 
 /*scroll titulaciones y bloques grises*/
 
@@ -159,6 +164,16 @@ strong{
     overflow-y: scroll;
     overflow-x: hidden;
     height: 400px;
+    width: 90%;
+    margin:0 auto;
+    border: 0.1px solid #68686928;
+    border-radius: 1.2%;
+}
+
+.scroll-titulos2{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 25vw;
     width: 90%;
     margin:0 auto;
     border: 0.1px solid #68686928;
@@ -237,11 +252,15 @@ strong{
 }
 
 .bloque-individual-2{
-    margin: 5px 10px 15px 10px !important;
+    margin: 5px 10px 5px 10px !important;
     height: 100%;
     border: 0.1px solid #68686928;
     border-radius: 1%;
-    padding: 0 5% 20px 5% ;
+    padding: 0 2% 20px 2% ;
+}
+
+.bloque-individual-2:hover{
+    border: 0.1px solid #f54545;
 }
 
 .master{
@@ -344,7 +363,64 @@ strong{
     padding-left: 0px !important;
 }
 
-
 .styled__Container-sc-z37tf1-0 .tBKau .tally-powered{
     display:none !important;
+}
+
+.divbotonsocial{   
+    width: 30px;
+    height: 30px;    
+    background-color: white;
+    border-radius: 100%;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+    border: #413c3c 1px solid;
+}
+
+.botonsocial{
+    font-size: 20px;
+color:#413c3c !important;
+    margin-left:4.5px;
+    line-height:25px; 
+    text-align: center;
+}
+
+.botonsocial:hover¨{
+    color:#413c3c !important;
+}
+
+.divbotonsocial:hover{
+    color:#413c3c  !important;
+    transform: rotate(-35deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.divbotonsocial:active{
+color:#413c3c  !important;
+}
+
+
+
+
+
+
+
+.avatar{
+    width: 6vw;
+    height: 6vw;
+    display: block;
+    margin: 0px auto;
+    border-radius: 100%;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    background-color: #413c3c;
+}
+
+.datos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    margin-top:0.2vw;
 }
