@@ -338,11 +338,16 @@ strong{
 }
 
 .imagenkotodama{
-    width: 50%;;
+    width: 70%;;
     display:block;
     margin:auto;
 }
 
+.imagenganharu{
+    width: 50%;;
+    display:block;
+    margin:auto;
+}
 .gamanimg{
     width: 80%;;
     display:block;
