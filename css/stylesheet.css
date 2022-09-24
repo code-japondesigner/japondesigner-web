@@ -94,6 +94,13 @@ strong{
     text-align: center;
 }
 
+.titulotextoprecio{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 320;
+    font-size: 12px;
+    color:#413c3c;
+}
+
 
 
 /*NAVBAR*/
@@ -419,4 +426,64 @@ color:#413c3c  !important;
 
 }
 
-.algo{color: #413c3c !important;background-color: #413c3c;}.otro{color: wheat !important;background-color: red;}
+
+/*App precios*/
+
+.precio{
+    top:0;
+    margin-top: 0;
+    text-align: center !important;
+    font-size: 100px !important;
+}
+
+.precioeuro{
+    font-size: 25px !important;
+}
+
+.precioanual{
+    font-size: 10px !important;
+}
+
+.pagomensual{
+    top:0;
+    padding: 0px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
+.botonoff{
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    border: 0px solid;
+    background-color:#ffffff;
+    border: 0.1px solid #413c3c;
+    color:#413c3c;
+    margin-bottom: 10px;
+    padding: 2px ;
+}
+
+.botonoff:hover{
+    background-color:#413c3cee;
+    color:white;
+}
+
+.botonon{
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    border: 0px solid;
+    background-color:#f54545;
+    color:white;
+    margin-bottom: 10px;
+    padding: 2px ;
+    line-height: auto;
+}
+
+.puntos{
+    list-style:circle !important;
+    font-size: 12px;
+    margin-top: -10px;
+}

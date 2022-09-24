@@ -417,23 +417,16 @@
         <img src="./media/agatsu1.png" alt="" class="komakaiimg">
         <br>
         <p class="titulotexto-sub-2">Servicios aplicativos</p>
-        <p class="titulotexto">
-          Para mí la mejor forma de reducir el estres y la ansiedad es golpear mi makiwara o praticar Tai-Chi tres veces por semana. El Tai-Chi enseña la exactitud de un movimiento lento mientras que el makiwara la corrección de un movimiento rápido.
 
-        </p>
-        <p class="titulotexto">
-          Cuando necesito estar muy enfocado en mi trabajo me gusta sustitur las actividades anteriores por una meditación Zazen. 
-
-        </p>
-        <button v-on:click.once="weblandignpage" class=" col-12" v-bind:Class="countweblandignpage == true ? 'algo' : 'otro' ">Web Landing page {{countweblandignpage}}</button>
-        <button v-on:click.once="WebDinamica" class="btn btn-primary col-12" v-bind:Class="countWebDinamica == true ? 'algo' : 'otro' ">Web Dinámica</button>
-        <button v-on:click.once="WebEcommerce" class="btn btn-primary col-12">Web E-commerce</button>
-        <button v-on:click.once="WebAmedida" class="btn btn-primary col-12">Web A medida</button>
-        <button v-on:click.once="Wordpress" class="btn btn-primary col-12">Wordpress</button>
-        <button v-on:click.once="SEOonPage" class="btn btn-primary col-12">SEO onPage</button>
-        <button v-on:click.once="weblandignpage" class="btn btn-primary col-12">Google Analytics</button>
-        <button v-on:click.once="App" class="btn btn-primary col-12">App</button>
-        <button v-on:click.once="AppBD" class="btn btn-primary col-12">App + BD</button>
+        <button v-on:click.once="weblandignpage" class="col-12" v-bind:Class="countweblandignpage == false ? 'botonoff' : 'botonon' ">Web Landing page</button>
+        <button v-on:click.once="WebDinamica" class="col-12" v-bind:Class="countWebDinamica == false ? 'botonoff' : 'botonon' ">Web Dinámica</button>
+        <button v-on:click.once="WebEcommerce" class="col-12" v-bind:Class="countWebEcommerce == false ? 'botonoff' : 'botonon' ">Web E-commerce</button>
+        <button v-on:click.once="WebAmedida" class="col-12" v-bind:Class="countWebAmedida == false ? 'botonoff' : 'botonon' ">Web A medida</button>
+        <button v-on:click.once="ycode" class="col-12" v-bind:Class="countycode == false ? 'botonoff' : 'botonon' ">Wordpress / ycode</button>
+        <button v-on:click.once="SEOonPage" class="col-12" v-bind:Class="countSEOonPage == false ? 'botonoff' : 'botonon' ">SEO onPage</button>
+        <button v-on:click.once="GoogleAnalytics" class="col-12" v-bind:Class="countGoogleAnalytics == false ? 'botonoff' : 'botonon' ">Google Analytics</button>
+        <button v-on:click.once="App" class="col-12" v-bind:Class="countApp == false ? 'botonoff' : 'botonon' ">App</button>
+        <button v-on:click.once="email" class="col-12" v-bind:Class="countemail == false ? 'botonoff' : 'botonon' ">Email</button>
       </div>
     </div>
 
@@ -442,22 +435,16 @@
         <img src="./media/agatsu2.png" alt="" class="komakaiimg">
         <br>
         <p class="titulotexto-sub-2">Servicios de diseño gráfico y marketing</p>
-        <p class="titulotexto">
-          Aunque he sido un devorador de libros, actualmente me gusta leer una novela de samurais del Japón feudal o un libro tradicional de fiosofia oriental lentamente, de esta forma me da tiempo a absorber el conocimiento mientras soy consciente en mi día a día de su vocabulario. 
 
-        </p>
-        <p class="titulotexto">
-          Unos de mis libros favoritos son la trilogia de las piedras de Chihaya, Genki, fantasmas y samurais, Tao Te Chin, los 47 Ronin, el libro de los cinco anillos, Taiko, Goodbye thinks, un Buda en la oficina, entre otros...
-        </p>
-        <button v-on:click.once="SEOdecompetencia" class="btn btn-primary col-12">SEO de competencia, offPage y backlinks</button>
-        <button v-on:click.once="BrandBook" class="btn btn-primary col-12">BrandBook</button>
-        <button v-on:click.once="Branding" class="btn btn-primary col-12">Branding o rebranding</button>
-        <button v-on:click.once="Papeleria" class="btn btn-primary col-12">Papelería</button>
-        <button v-on:click.once="Artepublicitario" class="btn btn-primary col-12">Arte publicitario</button>
-        <button v-on:click.once="Ediciondevideo" class="btn btn-primary col-12">Edición de video</button>
-        <button v-on:click.once="Packaging" class="btn btn-primary col-12">Packaging</button>
-        <button v-on:click.once="disenodelogo" class="btn btn-primary col-12">diseño de logo</button>
-        <button v-on:click.once="Ukiyo" class="btn btn-primary col-12">Dibujo Ukiyo-e</button>
+        <button v-on:click.once="SEOdecompetencia" class="col-12" v-bind:Class="countSEOdecompetencia == false ? 'botonoff' : 'botonon' ">SEO de competencia, offPage y backlinks</button>
+        <button v-on:click.once="BrandBook" class="col-12" v-bind:Class="countBrandBook == false ? 'botonoff' : 'botonon' ">BrandBook</button>
+        <button v-on:click.once="Branding" class="col-12" v-bind:Class="countBranding == false ? 'botonoff' : 'botonon' ">Branding o rebranding</button>
+        <button v-on:click.once="Papeleria" class="col-12" v-bind:Class="countPapeleria == false ? 'botonoff' : 'botonon' ">Papelería</button>
+        <button v-on:click.once="Artepublicitario" class="col-12" v-bind:Class="countArtepublicitario == false ? 'botonoff' : 'botonon' ">Arte publicitario</button>
+        <button v-on:click.once="Ediciondevideo" class="col-12" v-bind:Class="countEdiciondevideo == false ? 'botonoff' : 'botonon' ">Edición de video</button>
+        <button v-on:click.once="Packaging" class="col-12" v-bind:Class="countPackaging == false ? 'botonoff' : 'botonon' ">Packaging</button>
+        <button v-on:click.once="disenodelogo" class="col-12" v-bind:Class="countdisenodelogo == false ? 'botonoff' : 'botonon' ">diseño de logo</button>
+        <button v-on:click.once="Ukiyo" class="col-12" v-bind:Class="countUkiyo == false ? 'botonoff' : 'botonon' ">Dibujo Ukiyo-e</button>
       </div>
     </div>
 
@@ -466,14 +453,34 @@
         <img src="./media/agatsu3.png" alt="" class="komakaiimg">
         <br>
         <p class="titulotexto-sub-2">Precio desde...</p>
-        <p class="titulotexto">
-          Dibujar es lo que mas me relaja y donde inconsciente mas me construllo artisticamente, dibujando Ukiyo-e se aprende de conceptualización, linealialidad, separación, minimalismo y paletas entre tonalidades de un mismo color y cuando diferenciarlo con otro distinto.
-        </p>
-        <p class="titulotexto">
-          “De tradición agricola, los japoneses saben que no es es la rapidez en alcanzar el exito lo que colma la existencia, sino su perdurabilidad” El arte aunque muy poco correspondido hoy en dia es lo que siempre queda.
-        </p>
-        <p>{{total}}€</p>
-        <p class="titulotexto" v-if="countweblandignpage">- Landing Page</p>
+    
+          <p class="precio titulotexto">{{total}}<spam class="precioeuro titulotexto">€<spam class="precioanual titulotexto">  /Pago unico</spam></spam></p>
+
+          <p v-if="totalmes != 0" class="pagomensual titulotexto">{{totalmes}}€<spam class="precioanual titulotexto">  /Pago mensual</spam></p>
+     
+        <ul>
+          <li class="puntos" v-if="countweblandignpage"><p class="titulotextoprecio">Web landing page con un menú de dirección entre anclas, formulario, header, footer, backlinks, aviso de cookies, políticas legales y dirección de empresa para diseño web. </p></li>
+          <li class="puntos" v-if="countWebDinamica"><p class="titulotextoprecio">Web dinámica desde cambios reactivos en la web hasta peticiones con base de datos, google sheet, MongoDb, etc. Para que el cliente pueda hacer cambios de valores desde la db.</p></li>
+          <li class="puntos" v-if="countWebEcommerce"><p class="titulotextoprecio">Web con catalogo de productos, login con cuentas para usuarios, pagos recurrentes, venta de productos virtuales o fisicos enlazados al banco del cliente con distintas pasarelas de pagos. </p></li>
+          <li class="puntos" v-if="countWebAmedida"><p class="titulotextoprecio">Cualquier tipo de web; landing-page, dinámicas o e-commerce. Construidas a código para un diseño lógico/artistico más enfocado en la distinción del cliente. </p></li>
+          <li class="puntos" v-if="countycode"><p class="titulotextoprecio">Web construida con Wordpress o ycode, ya sea una landing-page, dinámicas o e-commerce. En los dos casos se trabajará con un maquetador a la vez que con código a medida, enlazandolo a la necesidad de cada proyecto. </p></li>
+          <li class="puntos" v-if="countSEOonPage"><p class="titulotextoprecio">SEO orientado a la página que estamos contruyendo o una página que ya ha sido creada pero no tiene SEO onPage. </p></li>
+          <li class="puntos" v-if="countGoogleAnalytics"><p class="titulotextoprecio">Instalación y orientación de Google Analytics en página web, "Quien mejor para dar orientación que alguien matriculado en Google". </p></li>
+          <li class="puntos" v-if="countApp"><p class="titulotextoprecio">Aplicación nativa a medida o por lowCode con instalación a travez de PlayStore AppleStore o QR, con opción de cambios a traves de una base de datos.</p></li>
+          <li class="puntos" v-if="countemail"><p class="titulotextoprecio">Instalación y configuración de email corporativo mapeada a la cuenta de gmail, más diseño de firma de correos con la opción de QR.</p></li>
+
+          <li class="puntos" v-if="countSEOdecompetencia"><p class="titulotextoprecio">Orientación, antenimiento e instalación de interfaz a medida con conexion instantanea de todas las opciones SEO: offPage, de competencias, Backlinks, SEO organico. </p></li>
+          <li class="puntos" v-if="countBrandBook"><p class="titulotextoprecio">Guia para definir los elementos visuales y verbales que cornforman la identidad de marca. Comenzando por el Buyer y respondiendo preguntas como ¿Qué? ¿Cómo? y ¿Por qué?  </p></li>
+          <li class="puntos" v-if="countBranding"><p class="titulotextoprecio">Construir la identidad de marca sobre elementos caracteristicos como una taza, camisa de trabajo, un boligrafo, etc. A veces recreando el diseño para distintos formatos. </p></li>
+          <li class="puntos" v-if="countPapeleria"><p class="titulotextoprecio">Encargo y diseño de cartas, tarjetas de visita, flyers, sellos, facturas, sobres, carpetas... </p></li>
+          <li class="puntos" v-if="countArtepublicitario"><p class="titulotextoprecio">Redirigir a los usuarios del cliente hacia un enfoque publicitario impactante para un target determinado. </p></li>
+          <li class="puntos" v-if="countEdiciondevideo"><p class="titulotextoprecio">Es importante conocer la importancia de un video profesional, ya sea para redes sociales, web, publicitarios...  </p></li>
+          <li class="puntos" v-if="countPackaging"><p class="titulotextoprecio">Es la forma que mas identifica la marca dentro de los productos contenedores, entre ellos los más habituales son los envases, envoltorios, etiquetados de productos comerciales... </p></li>
+          <li class="puntos" v-if="countdisenodelogo"><p class="titulotextoprecio">Diseño vectorial enfocado exclusivamente en el logo de la empresa con distintos formatos para la adaptabilidad del branding </p></li>
+          <li class="puntos" v-if="countUkiyo"><p class="titulotextoprecio">Los dibujos de Ukiyo-e pueden ir desde un pequeño dibujo personalizado por ejemplo para un tatuaje o un libro de tatuador, hasta un cuadro o un diseño unico de arte flotante para tarjetas de visita (como es mi caso).  </p></li>
+
+        </ul>
+        
       </div>
     </div>
   </div>
@@ -496,7 +503,7 @@
 
 
 <p class="titulotexto col-12">Esta web está hecha con <strong>愛</strong> por Isaac Navajas Pozo.</p>
-<h2 class="titulo-japon-2 COL-12">JAPONDESIGNER</h2>
+
 
     <!--CDN de Vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
