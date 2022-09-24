@@ -425,8 +425,8 @@
           Cuando necesito estar muy enfocado en mi trabajo me gusta sustitur las actividades anteriores por una meditación Zazen. 
 
         </p>
-        <button v-on:click.once="weblandignpage" class="btn btn-primary col-12">Web Landing page</button>
-        <button v-on:click.once="WebDinamica" class="btn btn-primary col-12">Web Dinámica</button>
+        <button v-on:click.once="weblandignpage" class=" col-12" v-bind:Class="countweblandignpage == true ? 'algo' : 'otro' ">Web Landing page {{countweblandignpage}}</button>
+        <button v-on:click.once="WebDinamica" class="btn btn-primary col-12" v-bind:Class="countWebDinamica == true ? 'algo' : 'otro' ">Web Dinámica</button>
         <button v-on:click.once="WebEcommerce" class="btn btn-primary col-12">Web E-commerce</button>
         <button v-on:click.once="WebAmedida" class="btn btn-primary col-12">Web A medida</button>
         <button v-on:click.once="Wordpress" class="btn btn-primary col-12">Wordpress</button>
@@ -441,7 +441,7 @@
       <div class="bloque-individual">
         <img src="./media/agatsu2.png" alt="" class="komakaiimg">
         <br>
-        <p class="titulotexto-sub-2">Servicios de diseño gráfico</p>
+        <p class="titulotexto-sub-2">Servicios de diseño gráfico y marketing</p>
         <p class="titulotexto">
           Aunque he sido un devorador de libros, actualmente me gusta leer una novela de samurais del Japón feudal o un libro tradicional de fiosofia oriental lentamente, de esta forma me da tiempo a absorber el conocimiento mientras soy consciente en mi día a día de su vocabulario. 
 
@@ -472,7 +472,8 @@
         <p class="titulotexto">
           “De tradición agricola, los japoneses saben que no es es la rapidez en alcanzar el exito lo que colma la existencia, sino su perdurabilidad” El arte aunque muy poco correspondido hoy en dia es lo que siempre queda.
         </p>
-        <p>{{total}}</p>
+        <p>{{total}}€</p>
+        <p class="titulotexto" v-if="countweblandignpage">- Landing Page</p>
       </div>
     </div>
   </div>
