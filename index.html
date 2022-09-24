@@ -36,6 +36,13 @@
 
 
 
+
+
+
+
+
+
+
 <!--1º Bloque-->
 
   <div class="col-12" id="kaizen">
@@ -62,6 +69,13 @@
   </div>
 
 <br>
+
+
+
+
+
+
+
 
 
 
@@ -132,6 +146,13 @@
 
 
 
+
+
+
+
+
+
+
 <!--3º Bloque-->
 <div class="col-12" id="Komakai">
   <br>
@@ -155,7 +176,7 @@
           <br>
           <p class="titulotexto-sub-2">Diseño Web y App</p>
           <p class="titulotexto">
-            Soy especialista en web y aplicaciones nativas, ya sea por Low Code o a medida, desde webs corporativas, web dinámicas o e-commerce. <strong>Soy un aprendiz incansable</strong> de Webflow, Make, Zapier, Flutter, Bubble,  Airtable, Wized, Wordpress, Prestashop, PHP, Javascript, Typescript, MYSQL, Mariadb, Mongodb, Laravel, Vue.js, React.js, Swift, HTML, CSS, Bootstrap, Express.js, Composer, npm, git, JQuery, Node y otras muchas alternativas aplicadas a las necesidades de cada cliente.  
+            Soy especialista en web y aplicaciones nativas, preferiblemente frontend, ya sea por Low Code o a medida, desde webs corporativas, web dinámicas o e-commerce. <strong>Soy un aprendiz incansable</strong> de Webflow, Make, Zapier, Flutter, Bubble, Airtable, Wized, Wordpress, Prestashop, PHP, Javascript, Typescript, MYSQL, Mariadb, Mongodb, Laravel, Vue.js, React.js, Swift, HTML, CSS, Bootstrap, Express.js, Composer, npm, git, JQuery, Node y otras muchas alternativas aplicadas a las necesidades de cada cliente incluyendo servidores.  
 
           </p>
           <p class="titulotexto">
@@ -229,6 +250,17 @@
 
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
     
 
 <!--4º Bloque-->
@@ -309,6 +341,14 @@
 
 
   
+
+
+
+
+
+
+
+
 <!--5º Bloque-->
 
 
@@ -318,29 +358,41 @@
     <h2 class="titulo-japon-2">Kotodama</h2>
     <p class="titulotexto-sub-2">❝El alma que reside en las palabras.❞</p>
     <p class="titulotexto">
-      Si tienes cualquier duda sobre mis servicios o quieres ponerte en contacto conmigo no dudes en mandarme un mensaje, te responderé <strong>enérgicamente</strong>.
+      Si tienes cualquier duda sobre mis servicios o quieres ponerte en contacto conmigo no dudes en mandarme un mensaje por el formulario o a <a href="mailto:info@japondesigner.com" class="titulotexto"><strong>info@japondesigner.com</strong></a>, te responderé <strong>enérgicamente</strong>.
     </p>
 
 
-
-    <div class="col-6"> 
+    <div class="col-6 bloque-formulario"> 
       <iframe data-tally-src="https://tally.so/embed/n9q6KG?alignLeft=1&hideTitle=1&transparentBackground=1" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Formulario 1"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if(d.querySelector('script[src="'+w+'"]'))v();else{var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-      
+      <div class="bloqueblanco"></div>
     </div>
     
 
     <div class="col-6"> 
       <img src="./media/kotodama.png" alt="" class="imagenkotodama">
-      
     </div>
 
-
-
   </div>
+</div>
 
 
 
-  <!--6º Bloque-->
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<!--6º Bloque-->
 
 
 <div class="col-12" id="Agatsu">
@@ -351,19 +403,20 @@
     <p class="titulotexto">
       Solo cuando se da el 100 x 100 cada día es cuando es necesario hacer pequeños descansos para alejarte de tus metas y verlas desde otra perspectiva, es por eso que para mi es muy importante desconectarme tecnologicamente, lo que llamo el 3º tiempo. 
       Para que se entienda aún más el concepto de esta web y me conozcas mejor, voy a compartir contigo unas de las actividades que más me gusta hacer.
+    </p>
+</div>
 
 
 
-  </div>
 
 
-  <div class="col-12">
+  <div class="col-12" id="app">
 
     <div class="col-4 ">
       <div class="bloque-individual">
         <img src="./media/agatsu1.png" alt="" class="komakaiimg">
         <br>
-        <p class="titulotexto-sub-2">Disciplina</p>
+        <p class="titulotexto-sub-2">Servicios aplicativos</p>
         <p class="titulotexto">
           Para mí la mejor forma de reducir el estres y la ansiedad es golpear mi makiwara o praticar Tai-Chi tres veces por semana. El Tai-Chi enseña la exactitud de un movimiento lento mientras que el makiwara la corrección de un movimiento rápido.
 
@@ -372,6 +425,15 @@
           Cuando necesito estar muy enfocado en mi trabajo me gusta sustitur las actividades anteriores por una meditación Zazen. 
 
         </p>
+        <button v-on:click.once="weblandignpage" class="btn btn-primary col-12">Web Landing page</button>
+        <button v-on:click.once="WebDinamica" class="btn btn-primary col-12">Web Dinámica</button>
+        <button v-on:click.once="WebEcommerce" class="btn btn-primary col-12">Web E-commerce</button>
+        <button v-on:click.once="WebAmedida" class="btn btn-primary col-12">Web A medida</button>
+        <button v-on:click.once="Wordpress" class="btn btn-primary col-12">Wordpress</button>
+        <button v-on:click.once="SEOonPage" class="btn btn-primary col-12">SEO onPage</button>
+        <button v-on:click.once="weblandignpage" class="btn btn-primary col-12">Google Analytics</button>
+        <button v-on:click.once="App" class="btn btn-primary col-12">App</button>
+        <button v-on:click.once="AppBD" class="btn btn-primary col-12">App + BD</button>
       </div>
     </div>
 
@@ -379,7 +441,7 @@
       <div class="bloque-individual">
         <img src="./media/agatsu2.png" alt="" class="komakaiimg">
         <br>
-        <p class="titulotexto-sub-2">Lectura</p>
+        <p class="titulotexto-sub-2">Servicios de diseño gráfico</p>
         <p class="titulotexto">
           Aunque he sido un devorador de libros, actualmente me gusta leer una novela de samurais del Japón feudal o un libro tradicional de fiosofia oriental lentamente, de esta forma me da tiempo a absorber el conocimiento mientras soy consciente en mi día a día de su vocabulario. 
 
@@ -387,6 +449,15 @@
         <p class="titulotexto">
           Unos de mis libros favoritos son la trilogia de las piedras de Chihaya, Genki, fantasmas y samurais, Tao Te Chin, los 47 Ronin, el libro de los cinco anillos, Taiko, Goodbye thinks, un Buda en la oficina, entre otros...
         </p>
+        <button v-on:click.once="SEOdecompetencia" class="btn btn-primary col-12">SEO de competencia, offPage y backlinks</button>
+        <button v-on:click.once="BrandBook" class="btn btn-primary col-12">BrandBook</button>
+        <button v-on:click.once="Branding" class="btn btn-primary col-12">Branding o rebranding</button>
+        <button v-on:click.once="Papeleria" class="btn btn-primary col-12">Papelería</button>
+        <button v-on:click.once="Artepublicitario" class="btn btn-primary col-12">Arte publicitario</button>
+        <button v-on:click.once="Ediciondevideo" class="btn btn-primary col-12">Edición de video</button>
+        <button v-on:click.once="Packaging" class="btn btn-primary col-12">Packaging</button>
+        <button v-on:click.once="disenodelogo" class="btn btn-primary col-12">diseño de logo</button>
+        <button v-on:click.once="Ukiyo" class="btn btn-primary col-12">Dibujo Ukiyo-e</button>
       </div>
     </div>
 
@@ -394,18 +465,29 @@
       <div class="bloque-individual">
         <img src="./media/agatsu3.png" alt="" class="komakaiimg">
         <br>
-        <p class="titulotexto-sub-2">Dibujos</p>
+        <p class="titulotexto-sub-2">Precio desde...</p>
         <p class="titulotexto">
           Dibujar es lo que mas me relaja y donde inconsciente mas me construllo artisticamente, dibujando Ukiyo-e se aprende de conceptualización, linealialidad, separación, minimalismo y paletas entre tonalidades de un mismo color y cuando diferenciarlo con otro distinto.
         </p>
         <p class="titulotexto">
           “De tradición agricola, los japoneses saben que no es es la rapidez en alcanzar el exito lo que colma la existencia, sino su perdurabilidad” El arte aunque muy poco correspondido hoy en dia es lo que siempre queda.
         </p>
+        <p>{{total}}</p>
       </div>
     </div>
+  </div>
+
+    <img src="./media/LOGOS-02.svg" alt="" class="logojapondesigner">
 
 
-    <img src="./media/LOGOS 2-06.png" alt="" class="logojapondesigner">
+
+
+    
+
+
+
+
+
 
 
 
@@ -422,10 +504,11 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!--Bloques javascript de Vue-->
-    <script src="js/bloque1.js"></script>
+    <script src="js/App.js"></script>
     <script src="js/bloque2.js"></script>
     <script src="js/Gaman.js"></script>
     <script src="js/Ganharu.js"></script>
+    <script src="js/Agatsu.js"></script>
 
     <!--Bloque form -->
     <script async src="https://tally.so/widgets/embed.js"></script>

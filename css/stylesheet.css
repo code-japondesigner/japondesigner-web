@@ -404,3 +404,18 @@ color:#413c3c  !important;
 .logojapondesigner{
     width: 250px;
 }
+
+.bloque-formulario{
+    position:relative;
+}
+
+.bloqueblanco{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:425px;
+    right: 0px;
+
+}
+
