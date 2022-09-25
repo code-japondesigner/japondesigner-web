@@ -65,7 +65,7 @@
       },
       SEOdecompetencia: function () {
         this.countSEOdecompetencia = true
-        return this.totalmes = this.totalmes + 50
+        return this.totalmes = this.totalmes + 40
       },
       BrandBook: function () {
         this.countBrandBook = true
