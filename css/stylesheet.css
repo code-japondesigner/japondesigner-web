@@ -129,10 +129,6 @@ strong{
     color:#413c3c;
 }
 
-.nav li a:hover{
-    text-decoration: none !important;
-    color:#f54545;
-}
 
 #o{
     margin-top: 13px;
@@ -353,8 +349,8 @@ strong{
     margin:auto;
 }
 .gamanimg{
-    width: 500px;
-    height: 500px;
+    width: 520px;
+    height: 505px;
     display:block;
     margin:auto;
 }
