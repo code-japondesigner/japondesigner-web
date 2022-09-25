@@ -21,6 +21,7 @@
 
     .scroll-titulos{
         width: 100%;
+        border: 0.1px solid #6868695d;
     }
 
     .bloque-titulaciones-2{
@@ -78,6 +79,16 @@
     .bloque-titulaciones-2{
         padding-left: 2% !important;
         padding-right: 2% !important;
+        border: 0.1px solid #6868695d;
+    }
+
+    .scroll-titulos2{border: 0.1px solid #6868695d;}
+
+    .bloque-individual-2{border: 0.1px solid #6868695d;}
+
+    .bloqueblanco{
+        height:100px;
+        top:528px;
     }
 }
 
