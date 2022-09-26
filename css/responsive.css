@@ -5,6 +5,10 @@
 
 
 @media (max-width: 575.98px) { 
+    #kaizen{
+        margin-top:60px !important;
+    }
+
     .nav li{
         margin-left:4% !important;
     }
@@ -96,7 +100,7 @@
     }
 
     .botonoff{
-        border: 0.1px solid rgba(104, 104, 105, 0.781)d;
+        border: 0.1px solid rgba(104, 104, 105, 0.884)d;
     }
 
         

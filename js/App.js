@@ -6,23 +6,23 @@
           total:0,
           totalmes:0,
           countweblandignpage:0,
-          countWebDinamica:false,
-          countWebEcommerce:false,
-          countWebAmedida:false,
-          countycode:false,
-          countSEOonPage:false,
-          countGoogleAnalytics:false,
-          countApp:false,
-          countemail:false,
-          countSEOdecompetencia:false,
-          countBrandBook:false,
-          countBranding:false,
-          countPapeleria:false,
-          countArtepublicitario:false,
-          countEdiciondevideo:false,
-          countPackaging:false,
-          countdisenodelogo:false,
-          countUkiyo:false
+          countWebDinamica:0,
+          countWebEcommerce:0,
+          countWebAmedida:0,
+          countycode:0,
+          countSEOonPage:0,
+          countGoogleAnalytics:0,
+          countApp:0,
+          countemail:0,
+          countSEOdecompetencia:0,
+          countBrandBook:0,
+          countBranding:0,
+          countPapeleria:0,
+          countArtepublicitario:0,
+          countEdiciondevideo:0,
+          countPackaging:0,
+          countdisenodelogo:0,
+          countUkiyo:0
       },
       
   methods: {
@@ -102,9 +102,9 @@
       SEOdecompetencia: function () {
         this.countSEOdecompetencia += 1
         if(this.countSEOdecompetencia % 2){
-          return this.total = this.total + 40
+          return this.totalmes = this.totalmes + 40
         }else{
-          return this.total = this.total - 40
+          return this.totalmes = this.totalmes - 40
         }
       },
       BrandBook: function () {
