@@ -56,7 +56,7 @@
     }
 
     #Agatsu{
-        margin-top: 0px;
+        margin-top: 80px !important;
     }
 
     .komakaiimg{
@@ -92,9 +92,18 @@
     }
 
     .bloqueaparece{
-
         margin:0px 4% 0px 4%;
     }
+
+    .botonoff{
+        border: 0.1px solid rgba(104, 104, 105, 0.781)d;
+    }
+
+        
+    .seccion-loader{
+        margin-top:50%;
+    }
+
 }
 
 

@@ -299,7 +299,7 @@ strong{
 /*loader*/
 
 .seccion-loader{
-    margin-top:25%;
+    margin-top:28%;
 }
 
 .seccion-loader-2{
@@ -455,15 +455,10 @@ color:#413c3c  !important;
     height: auto;
     border-radius: 100px;
     background-color:#ffffff;
-    border: 0.1px solid #413c3c;
-    color:#413c3c;
+    border: 0.1px solid #686869a8;
     margin-bottom: 10px;
     padding: 2px ;
-}
-
-.botonoff:hover{
-    background-color:#413c3cee;
-    color:white;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .botonon{
@@ -476,6 +471,7 @@ color:#413c3c  !important;
     margin-bottom: 10px;
     padding: 2px ;
     line-height: auto;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .puntos{
