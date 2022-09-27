@@ -74,6 +74,13 @@ a:hover{text-decoration: none;} a{text-decoration: none;}
     color:#413c3c;
 }
 
+.titulotexto:hover{
+    color:#413c3c;
+}
+
+.botonestatico .titulotexto:hover{
+    color:white !important;
+}
 strong{ 
     /*font-weight: bold ;*/
     color:#f54545;
@@ -450,6 +457,24 @@ color:#413c3c  !important;
     font-size: 15px !important;
 }
 
+.botonestatico{
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    background-color:#ffffff;
+    border: 0.1px solid #686869a8;
+    margin-bottom: 10px;
+    padding: 2px ;
+    transition: all 0.25s ease-in-out 0s;
+    text-align: center;
+}
+
+.botonestatico:hover{
+    border: 0.1px solid #f54545;
+    background-color:#f54545;
+    color:white !important;
+}
+
 .botonoff{
     width: 100%;
     height: auto;
@@ -458,8 +483,17 @@ color:#413c3c  !important;
     border: 0.1px solid #686869a8;
     margin-bottom: 10px;
     padding: 2px ;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
 }
+
+.botonoff:hover{
+    color:#413c3c;
+}
+
+.botonon:hover{
+    color:#ffffff;
+}
+
 
 .botonon{
     width: 100%;
@@ -471,7 +505,7 @@ color:#413c3c  !important;
     margin-bottom: 10px;
     padding: 2px ;
     line-height: auto;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
 }
 
 .puntos{
