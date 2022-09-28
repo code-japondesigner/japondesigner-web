@@ -40,9 +40,9 @@
         padding: 0  ;
     }
 
-    #Komakai{margin-top:25px;}
+    #Komakai{margin-top:0px !important;}
 
-    #Ganharu{margin-top:25px;}
+    #Ganharu{margin-top:0px !important;}
 
     .imagenganharu{
         width: 60%;
@@ -50,7 +50,7 @@
         margin-bottom: 35px;
     }
 
-    #Kotodama{margin-top:90px;}
+    #Kotodama{margin-top:0px !important;}
 
     .imagenkotodama{
         width: 70% !important;
@@ -60,8 +60,8 @@
     }
 
     #Agatsu{
-        margin-top: 80px !important;
-    }
+        margin-top:70px !important;}
+    
 
     .komakaiimg{
         margin-top: 10px;
@@ -100,13 +100,14 @@
     }
 
     .botonoff{
-        border: 0.1px solid rgba(104, 104, 105, 0.884)d;
+        border: 0.1px solid rgba(104, 104, 105, 0.884);
     }
 
         
     .seccion-loader{
         margin-top:50%;
     }
+
 
 }
 
@@ -162,8 +163,12 @@
         margin-top: 0px;
     }
 
+    .komakaiimg1{
+        margin-top: 40px !important;
+    }
+
     .komakaiimg{
-        margin-top: 10px;
+        margin-top: 80px;
     }
 
     #app div{
