@@ -103,14 +103,14 @@ strong{
 
 .titulotexto-sub{
     font-family: 'Fuente_texto_bold';
-    font-weight: 800;
+    font-weight: 900;
     font-size: 11px;
     color:#413c3c;
 }
 
 .titulotexto-sub-2{
     font-family:'Fuente_texto_bold';
-    font-weight: 800;
+    font-weight: 900;
     font-size: 11px;
     color:#413c3c;
     justify-content: center;
@@ -166,7 +166,15 @@ strong{
 }
 
 .bloque-titulaciones{
-    margin-top:30px;
+    margin-top:35px;
+}
+
+.bloque-gacharu{
+    margin-top:35px;
+}
+
+.bloque-kotodama{
+    margin-top:25px;
 }
 
 #Gaman{
@@ -189,6 +197,9 @@ strong{
     padding-top:80px ;
 }
 
+.mg-5{
+    margin-top:30px;
+}
 
 
 /*scroll titulaciones y bloques grises*/
@@ -374,6 +385,7 @@ strong{
     width: 70%;
     display:block;
     margin:auto;
+    margin-top: 30px;
 }
 
 .imagenganharu{

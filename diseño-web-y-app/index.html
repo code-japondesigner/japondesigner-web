@@ -19,7 +19,7 @@
         <li><a class="titulotexto">J</a></li>
         <li><a  class="titulotexto">A</a></li>
         <li><a class="titulotexto">P</a></li>
-        <li><a href="#Kotodama"><div id="o"></div> </a></li>
+        <li><a href="/"><div id="o"></div> </a></li>
         <li><a class="titulotexto">N</a></li>
         <li><a class="titulotexto">D</a></li>
         <li><a class="titulotexto">E</a></li>
@@ -56,8 +56,8 @@
      
   <div class="col-12 col-lg-6 ">
   <p class="titulotexto" id="separacion-imagen">Empezaré por decir que me considero un diseñador de experiencias...</p>
-  <h1 class="titulo-japon">ARIGATOU</h1>
-  <p class="titulotexto-sub">❝Gracias, dificil de conseguir.❞</p>
+  <h1 class="titulo-japon">IKIGAI</h1>
+  <p class="titulotexto-sub">❝Aquello que hace que todo tenga sentido.❞</p>
 
   <p class="titulotexto">Todos hemos visto alguna vez una película japonesa de maestro y aprendiz, en la que uno de los aprendices termina dedicando todo su tiempo y esfuerzo para entender un concepto con el que salva Japón de unos ninjas. En el diseño ocurre lo mismo, todos tenemos un ordenador en nuestra casa pero eso no nos convierte en diseñadores.</p>
   <p class="titulotexto">El diseño es como el aprendiz, <strong>por cada enseñanza</strong> hay que dedicar todo tu tiempo, afecto, conocimiento y sensibilidad para profesionalizar el gusto hasta convertirse en un diseñador maestro.</p>
@@ -92,54 +92,59 @@
   <p class="titulotexto">Siempre vamos a invertar excusas para no hacer algo, a veces incluso serán ciertas, pero la diferencia del éxito esta en la <strong>dedicación, puntualidad y disciplina</strong>. Estas son las titulaciones que he conseguido terminar desde el 2019 hasta el día de hoy, alguna de hasta 2.000 horas de duración, siempre intentando elegir las plataformas/profesores mas profesionales con los retos mas complejos.</p>
 
 
-   
-    <div class="bloque-titulaciones">
-      <div class="col-12 col-lg-6 ">
-          <img src="../media/gaman.png" alt="" class="gamanimg">
-      </div>
+   <div class="bloque-gacharu">
 
-      <div class="col-12 col-lg-6 " >
+  <div class="col-12 col-lg-6 " >
           
-          <section v-if="errored">
-            <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente más tarde...</p>
-          </section>
+    <div class="scroll-titulos">
+      <ul>
+        <li class="li-titulo titulotexto" >Página Web</li>
+        <p class="texto-enlace titulotexto">desciprción etmhpjtejhb bi okion bnob inonoi tbno nobtnob bt b nb mbbrmmrb mtrmbbrmb bno nbbnnbnbenbbnben n n bnono nob no</p>
+        
+      </ul>
+    </div>
+
+  </div>  
 
 
-          <section v-else>
-            
-            <div class="scroll-titulos">
-              <ul>
-                <li class="li-titulo titulotexto" v-if="!loading">Diplomaturas</li>
-                <div v-if="loading" class="seccion-loader">
-                  <img src="../media/loader.png" alt="" class="loaderimg">
-                  <div class="loading titulotexto">Cargando...</div>
-                </div>
+  <div class="col-12 col-lg-6 mg-4" >
+          
+    <div class="scroll-titulos">
+      <ul>
+        <li class="li-titulo titulotexto" >Página Web dinámica</li>
+        <p class="texto-enlace titulotexto">desciprción</p>
+      </ul>
+    </div>
+    
+  </div>  
 
 
-              <div v-for="item of info">
-                <div v-for="itemo of item.records">
-                  <div v-for="itemi of 1">
-                    <li>
-                      <a class="texto-enlace titulotexto" v-if="itemo.fields.href" :href="itemo.fields.href" download="itemo.fields.href">{{itemo.fields.Status}}</a>
-                      <a class="texto-enlace titulotexto" v-if="!itemo.fields.href & itemo.fields.Status" :href="!itemo.fields.URL" target="_blank">{{itemo.fields.Status}}</a>
-                    </li> 
-                  </div>
-                </div>
-              </div>
+  <div class="col-12 col-lg-6 mg-5" >
+          
+    <div class="scroll-titulos">
+      <ul>
+        <li class="li-titulo titulotexto" >E-commerce (Tienda)</li>
+        <p class="texto-enlace titulotexto">desciprción</p>
+      </ul>
+    </div>
+    
+  </div>  
 
-              </ul>
-            </div>
 
-          </section>
+  <div class="col-12 col-lg-6 mg-5" >
+          
+    <div class="scroll-titulos">
+      <ul>
+        <li class="li-titulo titulotexto" >Menú digital con acceso desde QR</li>
+        <p class="texto-enlace titulotexto">desciprción</p>
+      </ul>
+    </div>
+    
+  </div>  
 
-          <div class="bloque-titulaciones-2">
-            <a class="texto-enlace titulotexto master" href="https://cei.es/cei-curso/master-de-diseno-grafico/" download="itemo.fields.href" target="blanck">Master en Diseño gráfico en la Cei.</a>
-          </div>
 
-        </div>  
-      </div>
-      
 
+</div>
 
 </div>
 
