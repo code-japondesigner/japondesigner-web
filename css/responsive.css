@@ -100,14 +100,13 @@
     }
 
     .botonoff{
-        border: 0.1px solid rgba(104, 104, 105, 0.884);
+        border: 0.1px solid rgba(104, 104, 105, 0.884);padding-bottom: 
     }
 
         
     .seccion-loader{
         margin-top:50%;
     }
-
 
 }
 
