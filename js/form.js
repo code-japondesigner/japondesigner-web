@@ -1,7 +1,7 @@
 
 
 new Vue({
-  name: "#app",
+  name: "#form",
   data() {
     return {
       loading: false,
