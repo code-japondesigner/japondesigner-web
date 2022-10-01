@@ -14,6 +14,7 @@
           countGoogleAnalytics:0,
           countApp:0,
           countemail:0,
+          countservidor:0,
           countSEOdecompetencia:0,
           countBrandBook:0,
           countBranding:0,
@@ -94,17 +95,27 @@
       email: function () {
         this.countemail += 1
         if(this.countemail % 2){
-          return this.total = this.total + 300
+          return this.total = this.total + 100
         }else{
-          return this.total = this.total - 300
+          return this.total = this.total - 100
+        }
+      },
+      servidor: function () {
+        this.countservidor += 1
+        if(this.countservidor % 2){
+            this.totalmes = this.totalmes + 4
+            this.total = this.total + 150
+        }else{
+            this.totalmes = this.totalmes - 4;
+            this.total = this.total - 150
         }
       },
       SEOdecompetencia: function () {
         this.countSEOdecompetencia += 1
         if(this.countSEOdecompetencia % 2){
-          return this.totalmes = this.totalmes + 40
+          return this.total = this.total + 900
         }else{
-          return this.totalmes = this.totalmes - 40
+          return this.total = this.total + 900
         }
       },
       BrandBook: function () {

@@ -434,6 +434,7 @@
         <button v-on:click="GoogleAnalytics" class="col-12 titulotexto" v-bind:Class="countGoogleAnalytics % 2 == 0 ? 'botonoff' : 'botonon' ">Google Analytics</button>
         <button v-on:click="App" class="col-12 titulotexto" v-bind:Class="countApp % 2 == 0 ? 'botonoff' : 'botonon' ">App</button>
         <button v-on:click="email" class="col-12 titulotexto" v-bind:Class="countemail % 2 == 0 ? 'botonoff' : 'botonon' ">Email</button>
+        <button v-on:click="servidor" class="col-12 titulotexto" v-bind:Class="countservidor % 2 == 0 ? 'botonoff' : 'botonon' ">Servidor</button>
       </div>
     </div>
 
@@ -475,6 +476,7 @@
           <li class="puntos" v-if="countGoogleAnalytics % 2 != 0 "><p class="titulotextoprecio">Instalación y orientación de Google Analytics en página web, "Quien mejor para dar orientación que alguien matriculado en Google". </p></li>
           <li class="puntos" v-if="countApp % 2 != 0 "><p class="titulotextoprecio">Aplicación nativa a medida o por lowCode con instalación a travez de PlayStore AppleStore o QR, con opción de cambios a traves de una base de datos.</p></li>
           <li class="puntos" v-if="countemail % 2 != 0 "><p class="titulotextoprecio">Instalación y configuración de email corporativo mapeada a la cuenta de gmail, más diseño de firma de correos con la opción de QR.</p></li>
+          <li class="puntos" v-if="countservidor % 2 != 0 "><p class="titulotextoprecio">Instalación y configuración de email corporativo mapeada a la cuenta de gmail, más diseño de firma de correos con la opción de QR.</p></li>
 
           <li class="puntos" v-if="countSEOdecompetencia % 2 != 0 "><p class="titulotextoprecio">Orientación, mantenimiento e instalación de interfaz a medida con conexion instantanea de todas las opciones SEO: offPage, de competencias, Backlinks, organico y guia sobre el onPage. </p></li>
           <li class="puntos" v-if="countBrandBook % 2 != 0 "><p class="titulotextoprecio">Guia para definir los elementos visuales y verbales que cornforman la identidad de marca. Comenzando por el Buyer y respondiendo preguntas como ¿Qué? ¿Cómo? y ¿Por qué?  </p></li>
