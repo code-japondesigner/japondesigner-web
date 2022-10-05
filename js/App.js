@@ -115,7 +115,7 @@
         if(this.countSEOdecompetencia % 2){
           return this.total = this.total + 900
         }else{
-          return this.total = this.total + 900
+          return this.total = this.total - 900
         }
       },
       BrandBook: function () {
