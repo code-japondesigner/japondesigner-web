@@ -574,7 +574,11 @@
             'Accept': 'application/json'
           }
         })
-        if(response.ok){
+        if(response.ok && grecaptcha && grecaptcha.getResponse().length == 0){
+          //upps tienes que validar el recaptcha
+        }
+        if(response.ok && grecaptcha && grecaptcha.getResponse().length !== 0){
+          //Enorabuena has enviado el mensaje
           this.reset()
         }
       }
