@@ -570,10 +570,10 @@
         if(response.ok && grecaptcha && grecaptcha.getResponse().length == 0){
           //upps tienes que validar el recaptcha
         }
-        if(response.ok && grecaptcha && grecaptcha.getResponse().length !== 0){
+        if(response.ok && grecaptcha.getResponse().length !== 0){
           //Enorabuena has enviado el mensaje
           const form = new FormData(this)
-        const response = await fetch(this.action, {
+          const response = await fetch(this.action, {
           method:this.method,
           body:form,
           headers:{
