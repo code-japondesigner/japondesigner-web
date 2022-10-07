@@ -405,7 +405,7 @@
           <!-- your other form fields go here -->
           <button type="submit" class="col-12 botonformulario g-recaptcha" 
           data-sitekey="6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m" 
-          data-callback='handleSubmit' 
+          data-callback='onSubmit' 
           data-action='submit'>ENVIAR</button>
         </form>
 
@@ -578,7 +578,7 @@
           headers:{
             'Accept': 'application/json'
           }
-        }).submit()
+        })
 
         if(response.ok ){this.reset()}
           
@@ -589,7 +589,8 @@
 
 
       function onSubmit(token) {
-     document.getElementById("form").submit();
+        const $form = document.querySelector('#form');
+      $form.addEventListener('submit', handleSubmit).submit();
    }
     </script>
 
