@@ -403,9 +403,9 @@
            <!-- <div class="g-recaptcha" data-sitekey="6LcDP1oiAAAAAJ3JrqyGaP-gJ00f86pq1gQWe0eI" class="col-12"></div>-->
 
           <!-- your other form fields go here -->
-          <button type="submit" class="col-12 botonformulario g-recaptcha" 
+          <button class="col-12 botonformulario g-recaptcha" 
           data-sitekey="6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m" 
-   
+          data-callback='handleSubmit' 
           data-action='submit'>ENVIAR</button>
         </form>
 
@@ -579,7 +579,9 @@
             'Accept': 'application/json'
           }
         })
-          this.reset()
+
+        if(response.ok ){this.reset()}
+          
         
       
       }
