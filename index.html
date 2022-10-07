@@ -405,7 +405,7 @@
           <!-- your other form fields go here -->
           <button type="submit" class="col-12 botonformulario g-recaptcha" 
           data-sitekey="6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m" 
-          data-callback='onSubmit' 
+          data-callback='onClick' 
           data-action='submit'>ENVIAR</button>
         </form>
 
@@ -584,9 +584,18 @@
       }
 
 
-      function onSubmit(token) {
-     document.getElementById("form").submit();
-   }
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit',method:this.method,
+          body:form,
+          headers:{
+            'Accept': 'application/json'
+          }}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
     </script>
 
 
