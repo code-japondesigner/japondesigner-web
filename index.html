@@ -579,18 +579,14 @@
             'Accept': 'application/json'
           }
         })
-
         if(response.ok ){this.reset()}
-          
-        
       
       }
-      
+
 
       function onSubmit(token) {
-        const $form = document.querySelector('#form');
-      $form.addEventListener('submit', handleSubmit)
-
+        const $form = document.getElementById('#form');
+        $form.addEventListener('submit', handleSubmit);
    }
     </script>
 
