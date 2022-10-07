@@ -587,19 +587,10 @@
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m', {action: 'submit'}).then(async function(token) {
+          grecaptcha.execute('6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
                
-        const form = new FormData(this)
-          const response = await fetch(this.action, {
-          method:this.method,
-          body:form,
-          headers:{
-            'Accept': 'application/json'
-          }
-        })
-        if(response.ok ){this.reset()}
-      
+              handleSubmit()
 
           });
         });
