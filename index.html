@@ -584,8 +584,8 @@
       }
 
 
-      function onSubmit(token) {
-        handleSubmit()
+      function onSubmit(event) {
+        event.preventDefault()
      document.getElementById("form").submit();
    }
     </script>
