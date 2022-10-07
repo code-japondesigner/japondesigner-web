@@ -570,7 +570,6 @@
       async function handleSubmit(event){
         event.preventDefault()
 
-        if(grecaptcha.getResponse().length !== 0){
           
         const form = new FormData(this)
           const response = await fetch(this.action, {
@@ -582,7 +581,7 @@
         })
           this.reset()
         
-      }
+      
       }
 
 
