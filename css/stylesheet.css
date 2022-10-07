@@ -547,14 +547,14 @@ color:#413c3c  !important;
 /*formulario*/
 
 .input{
-    border: 1px solid #413c3c;
+    border: 0.1px solid #686869a8;
     border-radius:15px;
     height: 35px;
     padding-left: 15px;
 }
 
 .inputtarea{
-    border: 1px solid #413c3c;
+    border: 1px solid #686869a8;
     border-radius:15px;
     height: 150px;
     padding-left: 15px;
