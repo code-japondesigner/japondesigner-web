@@ -574,11 +574,5 @@ label{
     font-size: 17px;
     height: 30px;
     line-height: 15px;;
-    margin-top:110px;
-}
-
-.g-recaptcha{
-    width: auto;
-    height: auto;
-    margin-top:5px;
+    margin-top:20px;
 }

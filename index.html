@@ -400,10 +400,13 @@
           </label>
           <textarea name="message" id="mensaje" class="col-12 inputtarea"></textarea>
 
-          <div class="g-recaptcha" data-sitekey="6LcDP1oiAAAAAJ3JrqyGaP-gJ00f86pq1gQWe0eI" class="col-12"></div>
+           <!-- <div class="g-recaptcha" data-sitekey="6LcDP1oiAAAAAJ3JrqyGaP-gJ00f86pq1gQWe0eI" class="col-12"></div>-->
 
           <!-- your other form fields go here -->
-          <button type="submit" class="col-12 botonformulario">ENVIAR</button>
+          <button type="submit" class="col-12 botonformulario g-recaptcha" 
+          data-sitekey="reCAPTCHA_site_key" 
+          data-callback='onSubmit' 
+          data-action='submit'>ENVIAR</button>
         </form>
 
 
@@ -581,7 +584,17 @@
         
       }
       }
+
+
+
+      function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
     </script>
+
+
+    <!--recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
   </div>
   </body>
