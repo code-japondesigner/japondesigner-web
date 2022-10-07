@@ -587,12 +587,20 @@
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit',method:this.method,
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(async function(token) {
+              // Add your logic to submit to your backend server here.
+               
+        const form = new FormData(this)
+          const response = await fetch(this.action, {
+          method:this.method,
           body:form,
           headers:{
             'Accept': 'application/json'
-          }}).then(function(token) {
-              // Add your logic to submit to your backend server here.
+          }
+        })
+        if(response.ok ){this.reset()}
+      
+
           });
         });
       }
