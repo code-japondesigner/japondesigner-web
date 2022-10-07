@@ -567,11 +567,6 @@
       
 
 
-
-      function onSubmit(token) {
-        const $form = document.querySelector('#form');
-      $form.addEventListener('submit', handleSubmit)
-
       async function handleSubmit(event){
         event.preventDefault()
 
@@ -590,6 +585,12 @@
         
       
       }
+      
+
+      function onSubmit(token) {
+        const $form = document.querySelector('#form');
+      $form.addEventListener('submit', handleSubmit)
+
    }
     </script>
 
