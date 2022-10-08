@@ -18,7 +18,7 @@ new Vue({
           this.errored = true
         })
         .finally(() => this.loading = false)
-      },4000);
+      },3000);
 
     
     }

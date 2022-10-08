@@ -383,7 +383,6 @@
           id="form"
           action="https://formspree.io/f/xbjbywvy"
           method="POST"
-          v-on:submit.prevent="eventoaviso"
         >
           <label for="nombre" class="col-12 titulotexto">
             Nombre
@@ -403,9 +402,9 @@
            <!-- <div class="g-recaptcha" data-sitekey="6LcDP1oiAAAAAJ3JrqyGaP-gJ00f86pq1gQWe0eI" class="col-12"></div>-->
 
           <!-- your other form fields go here -->
-          <button type="submit" class="col-12 botonformulario ">E  N  V  I  A  R </button>
+          <button type="submit" class="col-12 botonformulario " v-on:click="eventoaviso">E  N  V  I  A  R </button>
 
-          <div class="bloqueavisoform" v-if="aviso">
+          <div class="bloqueavisoform" id="bloqueaviso" v-if="aviso">
             <p class="textoaviso">¡Arigatou! Te responderé lo antes posible.</p>
           </div>
         </form>
@@ -564,7 +563,28 @@
     <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
+      let $form = document.getElementById("form")
+      $form.addEventListener('submit', handleSubmit)
+
+      async function handleSubmit(event){
+        event.preventDefault()
+
+          
+        const form = new FormData(this)
+          const response = await fetch(this.action, {
+          method:this.method,
+          body:form,
+          headers:{
+            'Accept': 'application/json'
+          }
+        })
+        if(response.ok ){
+          this.reset();
+          var intro = document.getElementsByClassName('bloqueaviso');
+          intro.style.display = "block";
+        }
       
+      }
 
 
     </script>

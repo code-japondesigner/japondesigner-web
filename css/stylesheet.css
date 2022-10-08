@@ -224,7 +224,10 @@ strong{
     filter: opacity(86%);
     border-radius: 1.2%;
     animation: fadein 0.5s;
+
 }
+
+
 
 @keyframes fadein {
     0% {

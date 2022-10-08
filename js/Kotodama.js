@@ -12,25 +12,9 @@
         this.aviso = true
 
         let $form = document.getElementById("form")
-      $form.addEventListener('submit', handleSubmit)
+      $form.addEventListener('submit', this.handleSubmit)
 
       },
-
-      
-      handleSubmit: async function (event){
-        event.preventDefault()
-
-        const form = new FormData(this)
-          const response = await fetch(this.action, {
-          method:this.method,
-          body:form,
-          headers:{
-            'Accept': 'application/json'
-          }
-        })
-        if(response.ok ){this.reset()}
-      
-      }
       }
 
   })
