@@ -1,24 +1,26 @@
 
   new Vue({
-    el: '#form',
+    el: '#Kotodama',
     data () {
       return {
- 
+        aviso:false
       }
     },
     methods: {
 
-      Formevent: function () {
+      eventoaviso: function () {
+        this.aviso = true
+
         let $form = document.getElementById("form")
-        $form.addEventListener('submit', handleSubmit)
+      $form.addEventListener('submit', handleSubmit)
+
+      },
 
       
-      },
-        handleSubmit: async function (event){
+      handleSubmit: async function (event){
         event.preventDefault()
 
-          
-          const form = new FormData(this)
+        const form = new FormData(this)
           const response = await fetch(this.action, {
           method:this.method,
           body:form,
@@ -29,6 +31,7 @@
         if(response.ok ){this.reset()}
       
       }
-      },
+      }
 
   })
+
