@@ -570,7 +570,7 @@
         event.preventDefault()
 
           
-        const form = new FormData(this)
+          const form = new FormData(this)
           const response = await fetch(this.action, {
           method:this.method,
           body:form,
@@ -583,9 +583,6 @@
       }
 
 
-      function onSubmit(event) {
-     document.getElementById("form").submit();
-   }
     </script>
 
 
