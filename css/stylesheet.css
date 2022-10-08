@@ -197,6 +197,10 @@ strong{
     padding-top:80px ;
 }
 
+#Agatsu{
+    padding-top:80px ;
+}
+
 .mg-5{
     margin-top:30px;
 }
@@ -571,8 +575,9 @@ label{
     border: 1px solid #f54545;
     border-radius:15px;
     font-family: 'Fuente_texto';  
-    font-size: 17px;
+    font-size: 10px;
     height: 30px;
     line-height: 15px;;
     margin-top:20px;
+    letter-spacing: 1vw;
 }

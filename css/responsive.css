@@ -60,7 +60,7 @@
     }
 
     #Agatsu{
-        margin-top:200px !important;}
+        margin-top:70px !important;}
     
 
     .komakaiimg{
@@ -162,7 +162,9 @@
         margin-bottom: 30px;
     }
 
-
+    #Agatsu{
+        margin-top: 0px;
+    }
 
     .komakaiimg1{
         margin-top: 40px !important;
