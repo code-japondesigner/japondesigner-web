@@ -1,24 +1,34 @@
 
   new Vue({
-    el: '#Gaman',
+    el: '#form',
     data () {
       return {
-        info: [],
-        loading: true,
-        errored: false
+ 
       }
     },
-    mounted () {
-      setTimeout(() => {
-      axios
-        .get("https://api.airtable.com/v0/appvGeynovaU9ro7D/Gaman?api_key=key0BNJe1hXIPdJUJ")
-        
-        .then(response => (this.info = response))
-        .catch(error => {
-          console.log(error)
-          this.errored = true
+    methods: {
+
+      Formevent: function () {
+        let $form = document.getElementById("form")
+        $form.addEventListener('submit', handleSubmit)
+
+      
+      },
+        handleSubmit: async function (event){
+        event.preventDefault()
+
+          
+          const form = new FormData(this)
+          const response = await fetch(this.action, {
+          method:this.method,
+          body:form,
+          headers:{
+            'Accept': 'application/json'
+          }
         })
-        .finally(() => this.loading = false)
-      },4000);
-    }
+        if(response.ok ){this.reset()}
+      
+      }
+      },
+
   })
