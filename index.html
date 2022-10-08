@@ -403,7 +403,10 @@
            <!-- <div class="g-recaptcha" data-sitekey="6LcDP1oiAAAAAJ3JrqyGaP-gJ00f86pq1gQWe0eI" class="col-12"></div>-->
 
           <!-- your other form fields go here -->
-          <button type="submit" class="col-12 botonformulario g-recaptcha">ENVIAR</button>
+          <button type="submit" class="col-12 botonformulario g-recaptcha" 
+          data-sitekey="6LddR2MiAAAAAOPAdJnX1rmO5OWi66dVFqRdqk6m" 
+  
+          data-action='submit'>ENVIAR</button>
         </form>
 
 
@@ -561,8 +564,8 @@
     <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
-      let $form = document.getElementById("form")
-      $form.addEventListener('submit', handleSubmit())
+      let $form = document.querySelector("#form")
+      $form.addEventListener('submit', handleSubmit)
 
       async function handleSubmit(event){
         event.preventDefault()
@@ -581,6 +584,9 @@
       }
 
 
+      function onSubmit(event) {
+     document.getElementById("form").submit();
+   }
     </script>
 
 
